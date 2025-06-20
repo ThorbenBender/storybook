@@ -30,7 +30,33 @@
     "injectables": [],
     "guards": [],
     "interceptors": [],
-    "classes": [],
+    "classes": [
+        {
+            "name": "AppButton",
+            "id": "class-AppButton-f583590dadac219e30cab2ab939b026500555362ab8b3ba02a4de773cbaec3fcf8aa638da1600a944e1868e86818679cd90d9cdefe0a2d2153bf618dbab66d45",
+            "file": "src/app/button/button.component.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "import { Component, Injectable } from '@angular/core';\n\nComponent({\n  standalone: false,\n  styles: './button.component.scss',\n  template: './button.component.html',\n});\nexport class AppButton {\n  constructor() {}\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "inputsClass": [],
+            "outputsClass": [],
+            "properties": [],
+            "methods": [],
+            "indexSignatures": [],
+            "extends": [],
+            "hostBindings": [],
+            "hostListeners": []
+        }
+    ],
     "directives": [],
     "components": [
         {
@@ -527,7 +553,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 9,
+        "count": 8,
         "status": "low",
         "files": [
             {
@@ -567,6 +593,15 @@
                 "name": "appConfig",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/button/button.component.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "AppButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
