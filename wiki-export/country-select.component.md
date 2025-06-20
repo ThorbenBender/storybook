@@ -1,7 +1,3 @@
-import { Meta, Story, Canvas, ArgsTable, Description } from '@storybook/addon-docs/blocks';
-
-
-
 # CountrySelect
 
 The `CountrySelectComponent` is a reusable Angular component that provides an elegant way to select countries from a predefined list. It includes flag emojis, supports different sizes, and integrates seamlessly with Angular forms through the ControlValueAccessor interface.
@@ -18,6 +14,7 @@ The `CountrySelectComponent` is a reusable Angular component that provides an el
 ## Basic Usage
 
 ```typescript
+import { CountrySelectComponent } from './country-select/country-select.component';
 
 @Component({
   template: `
@@ -107,3 +104,26 @@ The component includes 25 popular countries:
 - Mexico 🇲🇽
 - Argentina 🇦🇷
 - South Africa 🇿🇦
+
+## Accessibility
+
+The component follows accessibility best practices:
+
+- Proper semantic HTML with `<select>` element
+- ARIA labels for screen readers
+- Keyboard navigation support
+- Focus management
+- High contrast support
+
+## Styling
+
+The component uses CSS custom properties and can be easily themed:
+
+```scss
+app-country-select {
+  --select-border-color: #e1e5e9;
+  --select-focus-color: #3b82f6;
+  --select-background: #ffffff;
+  --select-text-color: #333;
+}
+```
