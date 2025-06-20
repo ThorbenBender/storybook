@@ -1,0 +1,33 @@
+<div class="country-select-container" [class]="'size-' + size">
+  <div class="select-wrapper">
+    <select 
+      class="country-select"
+      [value]="value || ''"
+      [disabled]="disabled"
+      (change)="onSelectionChange($event)"
+      (blur)="onTouched()">
+      
+      <option value="" disabled>{{ placeholder }}</option>
+      
+      <option 
+        *ngFor="let country of countries" 
+        [value]="country.code">
+        <span *ngIf="showFlags">{{ country.flag }} </span>{{ country.name }}
+      </option>
+    </select>
+    
+    <button 
+      *ngIf="allowClear && value" 
+      type="button"
+      class="clear-button"
+      [disabled]="disabled"
+      (click)="clearSelection()"
+      aria-label="Clear selection">
+      ×
+    </button>
+  </div>
+  
+  <div *ngIf="selectedCountry && showFlags" class="selected-flag">
+    {{ selectedCountry.flag }}
+  </div>
+</div>
